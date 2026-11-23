@@ -1,0 +1,188 @@
+RELATORIO DE METRICAS - DETECCAO DE COMUNIDADES EM REDES SOCIAIS
+Arquivo de entrada: dados/karate.csv
+
+======================================================================
+ ETAPA 1 - CONSTRUCAO DA REDE
+======================================================================
+Vertices (usuarios) ......: 34
+Arestas  (amizades) ......: 78
+Densidade ................: 0.1390
+Grau minimo / maximo .....: 1 / 17
+Grau medio ...............: 4.59
+
+Grau de cada vertice:
+  34              17
+  1               16
+  33              12
+  3               10
+  2                9
+  4                6
+  32               6
+  9                5
+  14               5
+  24               5
+  6                4
+  7                4
+  8                4
+  31               4
+  28               4
+  30               4
+  5                3
+  11               3
+  20               3
+  29               3
+  26               3
+  25               3
+  13               2
+  18               2
+  22               2
+  10               2
+  17               2
+  15               2
+  16               2
+  19               2
+  21               2
+  23               2
+  27               2
+  12               1
+
+Distribuicao de graus (grau: quantidade):
+  1:1  2:11  3:6  4:6  5:3  6:2  9:1  10:1  12:1  16:1  
+  17:1  
+
+======================================================================
+ ETAPA 2a - COMPONENTES CONEXAS (BFS)
+======================================================================
+O grafo E conexo.
+Numero de componentes conexas: 1
+Maior componente: 34 vertices (100.0% da rede)
+  C1   ( 34 vertices): {1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 18, 20, 22, 32, 31, 10, 28, 29, 33, 17, 34, 15, 16, 19, 21, 23, 24, 26, 30, 25, 27}
+
+======================================================================
+ ETAPA 2b - VERTICES DE ARTICULACAO (usuarios criticos)
+======================================================================
+Total: 1
+  1              grau  16  -> remocao gera 3 componente(s) (antes 1)
+
+======================================================================
+ ETAPA 2c - PONTES (conexoes criticas)
+======================================================================
+Total: 1
+  {1, 12}
+
+======================================================================
+ ETAPA 2d - COMPONENTES BICONEXAS (por vertices)
+======================================================================
+Total: 3
+  B1   ( 28 vertices,  67 arestas): {1, 2, 3, 4, 8, 9, 13, 14, 18, 20, 22, 32, 31, 10, 28, 29, 33, 34, 15, 16, 19, 21, 23, 24, 26, 30, 25, 27}
+  B2   (  2 vertices,   1 arestas, ponte): {1, 12}
+  B3   (  6 vertices,  10 arestas): {1, 5, 6, 7, 11, 17}
+
+======================================================================
+ ETAPA 2e - CONECTIVIDADE POR VERTICES E POR ARESTAS (Menger)
+======================================================================
+Rede completa : kappa(G) = 1, lambda(G) = 1, grau minimo = 1
+(kappa <= lambda <= grau minimo - desigualdade de Whitney)
+
+======================================================================
+ ETAPA 3 - COMUNIDADES (Girvan-Newman)
+======================================================================
+Primeiras remocoes (aresta de maior intermediacao):
+  remocao   1: {1, 32}  intermediacao = 71.39
+  remocao   2: {1, 3}  intermediacao = 66.90
+  remocao   3: {1, 9}  intermediacao = 77.32
+  remocao   4: {14, 34}  intermediacao = 82.00
+  remocao   5: {20, 34}  intermediacao = 123.23
+  remocao   6: {3, 33}  intermediacao = 100.21
+  remocao   7: {2, 31}  intermediacao = 143.63
+  remocao   8: {2, 3}  intermediacao = 109.25
+  remocao   9: {3, 4}  intermediacao = 107.67
+  remocao  10: {3, 8}  intermediacao = 142.75
+
+Niveis do dendrograma (cada divisao da rede):
+  removidas  comunidades  maior grupo    modularidade Q
+  0          1            34             0.0000
+  11         2            19             0.3600
+  14         3            18             0.3488
+  18         4            18             0.3632
+  24         5            12             0.4013   <== maior Q
+  25         6            12             0.3925
+  27         7            11             0.3762
+  29         8            11             0.3583
+  31         9            10             0.3417
+  33         10           9              0.3248
+  35         11           9              0.3159
+  37         12           8              0.2987
+  39         13           8              0.2804
+  41         14           7              0.2628
+  43         15           7              0.2475
+  45         16           7              0.2268
+  47         17           6              0.2089
+  49         18           6              0.1898
+  50         19           6              0.1813
+  53         20           5              0.1601
+  55         21           5              0.1469
+  58         22           4              0.1203
+  61         23           4              0.1082
+  63         24           4              0.0906
+  64         25           4              0.0803
+  ...
+  78         34           1              -0.0498
+
+Melhor particao: 5 comunidades, Q = 0.4013 (apos remover 24 arestas)
+----------------------------------------------------------------------
+  Com.  tam.   internas  de corte  dens.int  componente membros
+  K1    10     18        14        0.400     C1         {1, 2, 4, 8, 12, 13, 14, 18, 20, 22}
+  K2    6      7         15        0.467     C1         {3, 32, 28, 29, 26, 25}
+  K3    5      6         4         0.600     C1         {5, 6, 7, 11, 17}
+  K4    12     23        13        0.348     C1         {9, 31, 33, 34, 15, 16, 19, 21, 23, 24, 30, 27}
+  K5    1      0         2         0.000     C1         {10}
+
+Comparacao comunidades x componentes conexas:
+  Componentes conexas do grafo original: 1
+  Comunidades (maior modularidade)      : 5
+  Componente C1   contem 5 comunidade(s)
+  Modularidade da particao por componentes: Q = 0.0000
+  Toda comunidade esta contida em uma unica componente (as arestas
+  removidas pelo Girvan-Newman so podem dividir componentes).
+
+======================================================================
+ ETAPA 4 - SIMULACAO DE REMOCOES (aleatoria x grau x intermediacao)
+======================================================================
+
+Remocao de USUARIOS (vertices) (S = maior componente / 34 vertices; aleatoria = media de 50)
+  removidos fracao    | S aleat.   S grau     S interm.  | C aleat  C grau   C interm
+  0         0.000     | 1.000      1.000      1.000      | 1.0      1        1       
+  1         0.029     | 0.956      0.971      0.794      | 1.2      1        3       
+  2         0.059     | 0.914      0.765      0.765      | 1.4      3        3       
+  3         0.088     | 0.874      0.588      0.588      | 1.6      8        8       
+  5         0.147     | 0.815      0.235      0.235      | 1.7      14       14      
+  7         0.206     | 0.743      0.235      0.147      | 2.0      16       17      
+  10        0.294     | 0.644      0.088      0.088      | 2.3      19       19      
+  14        0.412     | 0.506      0.029      0.059      | 3.0      20       19      
+  17        0.500     | 0.379      0.029      0.059      | 3.9      17       16      
+  20        0.588     | 0.280      0.029      0.059      | 4.4      14       13      
+  27        0.794     | 0.099      0.029      0.059      | 4.4      7        6       
+  34        1.000     | 0.000      0.000      0.000      | 0.0      0        0       
+  aleatoria    : S < 0,5 apos 15 remocoes (44.1%)
+  grau         : S < 0,5 apos 4 remocoes (11.8%)
+  intermediacao: S < 0,5 apos 4 remocoes (11.8%)
+
+Remocao de AMIZADES (arestas) (S = maior componente / 34 vertices; aleatoria = media de 50)
+  removidos fracao    | S aleat.   S grau     S interm.  | C aleat  C grau   C interm
+  0         0.000     | 1.000      1.000      1.000      | 1.0      1        1       
+  1         0.013     | 1.000      1.000      1.000      | 1.0      1        1       
+  2         0.026     | 1.000      1.000      1.000      | 1.0      1        1       
+  4         0.051     | 0.999      1.000      1.000      | 1.0      1        1       
+  8         0.103     | 0.998      1.000      1.000      | 1.1      1        1       
+  12        0.154     | 0.992      1.000      0.559      | 1.3      1        2       
+  16        0.205     | 0.985      1.000      0.529      | 1.5      1        3       
+  23        0.295     | 0.963      1.000      0.529      | 2.3      1        4       
+  31        0.397     | 0.921      0.853      0.294      | 3.6      2        9       
+  39        0.500     | 0.854      0.853      0.235      | 5.6      2        13      
+  47        0.603     | 0.746      0.618      0.176      | 8.4      4        17      
+  62        0.795     | 0.302      0.088      0.118      | 18.4     18       23      
+  78        1.000     | 0.029      0.029      0.029      | 34.0     34       34      
+  aleatoria    : S < 0,5 apos 56 remocoes (71.8%)
+  grau         : S < 0,5 apos 49 remocoes (62.8%)
+  intermediacao: S < 0,5 apos 24 remocoes (30.8%)

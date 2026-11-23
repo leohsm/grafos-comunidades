@@ -1,0 +1,303 @@
+RELATORIO DE METRICAS - DETECCAO DE COMUNIDADES EM REDES SOCIAIS
+Arquivo de entrada: dados/facebook_ego0.csv
+
+======================================================================
+ ETAPA 1 - CONSTRUCAO DA REDE
+======================================================================
+Vertices (usuarios) ......: 333
+Arestas  (amizades) ......: 2519
+Densidade ................: 0.0456
+Grau minimo / maximo .....: 1 / 77
+Grau medio ...............: 15.13
+
+Grau de cada vertice (15 maiores):
+  56              77
+  67              75
+  271             72
+  322             71
+  25              68
+  26              67
+  21              64
+  252             64
+  277             64
+  122             62
+  119             61
+  239             58
+  9               56
+  200             56
+  203             56
+
+Distribuicao de graus (grau: quantidade):
+  1:29  2:23  3:18  4:11  5:16  6:18  7:16  8:15  9:13  10:12  
+  11:7  12:12  13:12  14:8  15:13  16:9  17:8  18:5  19:7  20:6  
+  21:4  22:3  23:5  24:4  25:4  26:4  27:4  29:2  30:2  31:1  
+  33:2  35:2  36:3  37:2  38:3  39:1  40:1  42:3  43:2  44:1  
+  45:1  46:2  47:1  48:1  54:1  55:1  56:3  58:1  61:1  62:1  
+  64:3  67:1  68:1  71:1  72:1  75:1  77:1  
+
+======================================================================
+ ETAPA 2a - COMPONENTES CONEXAS (BFS)
+======================================================================
+O grafo NAO e conexo.
+Numero de componentes conexas: 5
+Maior componente: 324 vertices (97.3% da rede)
+  C1   (324 vertices): {1, 48, 53, 54, 73, 88, 92, 119, 126, 133, 194, 236, 280, 299, 315, 322, 346, 2, 20, 115, 116, 149, 226, 312, 326, 333, 343, 3, 9, 25, 26, 67, 72, 85, 122, 142, 170, 188, 200, 228, ... +284}
+  C2   (  2 vertices): {33, 42}
+  C3   (  3 vertices): {90, 179, 145}
+  C4   (  2 vertices): {233, 256}
+  C5   (  2 vertices): {244, 282}
+
+======================================================================
+ ETAPA 2b - VERTICES DE ARTICULACAO (usuarios criticos)
+======================================================================
+Total: 25
+  133            grau  17  -> remocao gera 6 componente(s) (antes 5)
+  280            grau  42  -> remocao gera 6 componente(s) (antes 5)
+  115            grau  20  -> remocao gera 6 componente(s) (antes 5)
+  312            grau  25  -> remocao gera 6 componente(s) (antes 5)
+  152            grau   4  -> remocao gera 6 componente(s) (antes 5)
+  5              grau  12  -> remocao gera 6 componente(s) (antes 5)
+  219            grau   5  -> remocao gera 6 componente(s) (antes 5)
+  339            grau  26  -> remocao gera 6 componente(s) (antes 5)
+  239            grau  58  -> remocao gera 6 componente(s) (antes 5)
+  19             grau  15  -> remocao gera 8 componente(s) (antes 5)
+  111            grau  13  -> remocao gera 6 componente(s) (antes 5)
+  324            grau  25  -> remocao gera 6 componente(s) (antes 5)
+  23             grau  16  -> remocao gera 7 componente(s) (antes 5)
+  230            grau   8  -> remocao gera 7 componente(s) (antes 5)
+  173            grau   5  -> remocao gera 6 componente(s) (antes 5)
+  143            grau  11  -> remocao gera 6 componente(s) (antes 5)
+  243            grau   7  -> remocao gera 6 componente(s) (antes 5)
+  301            grau   2  -> remocao gera 6 componente(s) (antes 5)
+  49             grau   3  -> remocao gera 7 componente(s) (antes 5)
+  192            grau   4  -> remocao gera 8 componente(s) (antes 5)
+  260            grau   7  -> remocao gera 6 componente(s) (antes 5)
+  269            grau   5  -> remocao gera 6 componente(s) (antes 5)
+  81             grau   2  -> remocao gera 6 componente(s) (antes 5)
+  179            grau   2  -> remocao gera 6 componente(s) (antes 5)
+  166            grau   3  -> remocao gera 6 componente(s) (antes 5)
+
+======================================================================
+ ETAPA 2c - PONTES (conexoes criticas)
+======================================================================
+Total: 31
+  {5, 316}
+  {19, 138}
+  {23, 267}
+  {33, 42}
+  {34, 173}
+  {35, 143}
+  {47, 301}
+  {49, 192}
+  {49, 241}
+  {49, 255}
+  {52, 192}
+  {70, 230}
+  {81, 269}
+  {81, 286}
+  {90, 179}
+  {111, 279}
+  {115, 192}
+  {133, 183}
+  {145, 179}
+  {152, 339}
+  {153, 280}
+  {154, 219}
+  {160, 260}
+  {166, 198}
+  {192, 205}
+  {216, 243}
+  {233, 256}
+  {234, 239}
+  {244, 282}
+  {301, 324}
+  {305, 312}
+
+======================================================================
+ ETAPA 2d - COMPONENTES BICONEXAS (por vertices)
+======================================================================
+Total: 37
+  B1   (  2 vertices,   1 arestas, ponte): {23, 267}
+  B2   ( 10 vertices,  22 arestas): {8, 91, 110, 193, 201, 245, 259, 264, 23, 61}
+  B3   (  2 vertices,   1 arestas, ponte): {166, 198}
+  B4   (  2 vertices,   1 arestas, ponte): {81, 286}
+  B5   (  2 vertices,   1 arestas, ponte): {269, 81}
+  B6   (  2 vertices,   1 arestas, ponte): {133, 183}
+  B7   (  2 vertices,   1 arestas, ponte): {260, 160}
+  B8   (  2 vertices,   1 arestas, ponte): {5, 316}
+  B9   (  2 vertices,   1 arestas, ponte): {34, 173}
+  B10  (  4 vertices,   4 arestas): {230, 97, 182, 253}
+  B11  (  2 vertices,   1 arestas, ponte): {312, 305}
+  B12  (  2 vertices,   1 arestas, ponte): {192, 205}
+  B13  (  2 vertices,   1 arestas, ponte): {192, 52}
+  B14  (  2 vertices,   1 arestas, ponte): {49, 255}
+  B15  (  2 vertices,   1 arestas, ponte): {49, 241}
+  B16  (  2 vertices,   1 arestas, ponte): {49, 192}
+  B17  (  2 vertices,   1 arestas, ponte): {115, 192}
+  B18  (  2 vertices,   1 arestas, ponte): {243, 216}
+  B19  (  2 vertices,   1 arestas, ponte): {219, 154}
+  B20  (  8 vertices,  19 arestas): {6, 89, 95, 147, 219, 319, 19, 327}
+  B21  (  4 vertices,   5 arestas): {19, 112, 174, 293}
+  B22  (  2 vertices,   1 arestas, ponte): {35, 143}
+  B23  (  2 vertices,   1 arestas, ponte): {19, 138}
+  B24  (  2 vertices,   1 arestas, ponte): {111, 279}
+  B25  (  2 vertices,   1 arestas, ponte): {230, 70}
+  B26  (  2 vertices,   1 arestas, ponte): {239, 234}
+  B27  (  2 vertices,   1 arestas, ponte): {280, 153}
+  B28  (  2 vertices,   1 arestas, ponte): {47, 301}
+  B29  (  2 vertices,   1 arestas, ponte): {324, 301}
+  B30  ( 10 vertices,  39 arestas): {4, 78, 152, 181, 195, 218, 273, 275, 306, 328}
+  B31  (  2 vertices,   1 arestas, ponte): {152, 339}
+  B32  (267 vertices, 2399 arestas): {1, 48, 53, 54, 73, 88, 92, 119, 126, 133, 194, 236, 280, 299, 315, 322, 346, 2, 20, 115, 116, 149, 226, 312, 326, 333, 343, 3, 9, 25, 26, 67, 72, 85, 122, 142, 170, 188, 200, 228, ... +227}
+  B33  (  2 vertices,   1 arestas, ponte): {33, 42}
+  B34  (  2 vertices,   1 arestas, ponte): {179, 145}
+  B35  (  2 vertices,   1 arestas, ponte): {90, 179}
+  B36  (  2 vertices,   1 arestas, ponte): {233, 256}
+  B37  (  2 vertices,   1 arestas, ponte): {244, 282}
+
+======================================================================
+ ETAPA 2e - CONECTIVIDADE POR VERTICES E POR ARESTAS (Menger)
+======================================================================
+Rede completa : kappa(G) = 0, lambda(G) = 0, grau minimo = 1
+Maior compon. : kappa = 1, lambda = 1, grau minimo = 1 (324 vertices)
+(kappa <= lambda <= grau minimo - desigualdade de Whitney)
+
+======================================================================
+ ETAPA 3 - COMUNIDADES (Girvan-Newman)
+======================================================================
+Primeiras remocoes (aresta de maior intermediacao):
+  remocao   1: {175, 277}  intermediacao = 13061.67
+  remocao   2: {40, 307}  intermediacao = 5134.12
+  remocao   3: {23, 51}  intermediacao = 5136.97
+  remocao   4: {23, 83}  intermediacao = 7273.74
+  remocao   5: {23, 237}  intermediacao = 12799.03
+  remocao   6: {124, 170}  intermediacao = 15375.47
+  remocao   7: {23, 190}  intermediacao = 12923.75
+  remocao   8: {222, 240}  intermediacao = 21203.00
+  remocao   9: {152, 339}  intermediacao = 2230.00
+  remocao  10: {23, 245}  intermediacao = 575.00
+
+Niveis do dendrograma (cada divisao da rede):
+  removidas  comunidades  maior grupo    modularidade Q
+  0          5            324            0.0040
+  8          6            233            0.2221
+  9          7            223            0.2485
+  11         8            223            0.2497
+  14         9            218            0.2529
+  20         10           213            0.2553
+  21         11           213            0.2554
+  22         12           211            0.2560
+  27         13           211            0.2592
+  40         14           204            0.2704
+  43         15           202            0.2709
+  44         16           201            0.2708
+  45         17           200            0.2707
+  46         18           199            0.2707
+  47         19           198            0.2706
+  49         20           198            0.2705
+  50         21           197            0.2704
+  53         22           195            0.2709
+  55         23           194            0.2707
+  139        24           167            0.3753
+  159        25           154            0.4137
+  161        26           154            0.4140
+  163        27           153            0.4138
+  165        28           152            0.4136
+  169        29           150            0.4137
+  ...
+  200        36           140            0.4161   <== maior Q
+  2519       333          1              -0.0062
+
+Melhor particao: 36 comunidades, Q = 0.4161 (apos remover 200 arestas)
+----------------------------------------------------------------------
+  Com.  tam.   internas  de corte  dens.int  componente membros
+  K1    27     189       80        0.538     C1         {1, 48, 53, 73, 92, 126, 194, 299, 346, 180, 187, 204, 24, 57, 80, 94, 101, 242, 249, 266, 302, 130, 330, 191, 196, 254, 300}
+  K2    1      0         7         0.000     C1         {54}
+  K3    140    1685      155       0.173     C1         {88, 119, 133, 236, 280, 315, 322, 3, 9, 25, 26, 67, 72, 85, 122, 142, 170, 188, 200, 274, 323, 5, 87, 156, 158, 169, 213, 235, 7, 22, 31, 38, 65, 103, 129, 136, 168, 246, 291, 304, ... +100}
+  K4    39     185       9         0.250     C1         {2, 20, 115, 116, 149, 226, 312, 326, 333, 343, 14, 28, 41, 144, 151, 214, 310, 17, 19, 111, 137, 140, 112, 138, 174, 289, 293, 44, 162, 32, 93, 167, 337, 243, 279, 220, 262, 216, 305}
+  K5    2      1         4         1.000     C1         {228, 283}
+  K6    10     39        1         0.867     C1         {4, 78, 152, 181, 195, 218, 273, 275, 306, 328}
+  K7    1      0         1         0.000     C1         {316}
+  K8    8      18        2         0.643     C1         {6, 89, 95, 147, 219, 319, 327, 154}
+  K9    9      20        2         0.556     C1         {8, 91, 110, 193, 201, 245, 259, 264, 61}
+  K10   22     68        14        0.294     C1         {175, 227, 23, 99, 124, 155, 240, 267, 35, 143, 46, 177, 278, 68, 225, 263, 296, 86, 102, 131, 157, 321}
+  K11   13     68        35        0.872     C1         {108, 127, 159, 184, 197, 251, 281, 284, 36, 135, 309, 320, 139}
+  K12   3      3         12        1.000     C1         {51, 83, 237}
+  K13   1      0         3         0.000     C1         {190}
+  K14   7      8         4         0.381     C1         {230, 307, 70, 71, 97, 182, 253}
+  K15   2      1         3         1.000     C1         {76, 270}
+  K16   1      0         2         0.000     C1         {336}
+  K17   1      0         4         0.000     C1         {27}
+  K18   2      1         3         1.000     C1         {247, 120}
+  K19   2      1         0         1.000     C2         {33, 42}
+  K20   5      5         3         0.500     C1         {34, 173, 166, 198, 202}
+  K21   1      0         6         0.000     C1         {317}
+  K22   2      1         1         1.000     C1         {47, 301}
+  K23   6      5         1         0.333     C1         {49, 192, 241, 255, 52, 205}
+  K24   2      1         8         1.000     C1         {260, 206}
+  K25   1      0         2         0.000     C1         {207}
+  K26   5      4         5         0.400     C1         {58, 107, 269, 81, 286}
+  K27   7      16        17        0.762     C1         {171, 64, 100, 150, 189, 217, 163}
+  K28   1      0         2         0.000     C1         {294}
+  K29   1      0         2         0.000     C1         {164}
+  K30   3      2         0         0.667     C3         {90, 179, 145}
+  K31   1      0         1         0.000     C1         {183}
+  K32   1      0         1         0.000     C1         {153}
+  K33   1      0         1         0.000     C1         {160}
+  K34   2      1         0         1.000     C4         {233, 256}
+  K35   1      0         1         0.000     C1         {234}
+  K36   2      1         0         1.000     C5         {244, 282}
+
+Comparacao comunidades x componentes conexas:
+  Componentes conexas do grafo original: 5
+  Comunidades (maior modularidade)      : 36
+  Componente C1   contem 32 comunidade(s)
+  Componente C2   contem 1 comunidade(s)
+  Componente C3   contem 1 comunidade(s)
+  Componente C4   contem 1 comunidade(s)
+  Componente C5   contem 1 comunidade(s)
+  Modularidade da particao por componentes: Q = 0.0040
+  Toda comunidade esta contida em uma unica componente (as arestas
+  removidas pelo Girvan-Newman so podem dividir componentes).
+
+======================================================================
+ ETAPA 4 - SIMULACAO DE REMOCOES (aleatoria x grau x intermediacao)
+======================================================================
+
+Remocao de USUARIOS (vertices) (S = maior componente / 333 vertices; aleatoria = media de 50)
+  removidos fracao    | S aleat.   S grau     S interm.  | C aleat  C grau   C interm
+  0         0.000     | 0.973      0.973      0.973      | 5.0      5        5       
+  1         0.003     | 0.970      0.970      0.970      | 5.0      5        5       
+  2         0.006     | 0.967      0.967      0.937      | 5.2      5        7       
+  17        0.051     | 0.912      0.910      0.631      | 6.6      8        10      
+  33        0.099     | 0.853      0.856      0.480      | 8.4      10       20      
+  50        0.150     | 0.794      0.511      0.360      | 9.8      20       27      
+  67        0.201     | 0.734      0.471      0.294      | 11.2     23       32      
+  100       0.300     | 0.613      0.327      0.048      | 13.8     39       59      
+  133       0.399     | 0.497      0.099      0.036      | 16.5     64       90      
+  167       0.502     | 0.384      0.015      0.018      | 18.5     103      110     
+  200       0.601     | 0.281      0.006      0.015      | 20.7     118      100     
+  266       0.799     | 0.108      0.003      0.015      | 21.4     67       52      
+  333       1.000     | 0.000      0.000      0.000      | 0.0      0        0       
+  aleatoria    : S < 0,5 apos 132 remocoes (39.6%)
+  grau         : S < 0,5 apos 57 remocoes (17.1%)
+  intermediacao: S < 0,5 apos 31 remocoes (9.3%)
+
+Remocao de AMIZADES (arestas) (S = maior componente / 333 vertices; aleatoria = media de 50)
+  removidos fracao    | S aleat.   S grau     S interm.  | C aleat  C grau   C interm
+  0         0.000     | 0.973      0.973      0.973      | 5.0      5        5       
+  1         0.000     | 0.973      0.973      0.973      | 5.0      5        5       
+  2         0.001     | 0.973      0.973      0.973      | 5.0      5        5       
+  126       0.050     | 0.966      0.973      0.583      | 6.4      5        23      
+  252       0.100     | 0.959      0.973      0.387      | 8.2      5        47      
+  378       0.150     | 0.949      0.973      0.342      | 10.3     5        67      
+  504       0.200     | 0.941      0.973      0.303      | 12.4     5        81      
+  756       0.300     | 0.920      0.973      0.240      | 17.6     5        107     
+  1008      0.400     | 0.895      0.973      0.189      | 23.6     5        132     
+  1260      0.500     | 0.852      0.925      0.150      | 32.0     6        153     
+  1511      0.600     | 0.788      0.925      0.117      | 42.7     6        178     
+  2015      0.800     | 0.575      0.766      0.060      | 87.3     9        226     
+  2519      1.000     | 0.003      0.003      0.003      | 333.0    333      333     
+  aleatoria    : S < 0,5 apos 2165 remocoes (85.9%)
+  grau         : S < 0,5 apos 2191 remocoes (87.0%)
+  intermediacao: S < 0,5 apos 159 remocoes (6.3%)

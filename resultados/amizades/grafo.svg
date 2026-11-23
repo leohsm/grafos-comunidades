@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="980" viewBox="0 0 900 980" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450" y="30" font-size="20" text-anchor="middle">Rede social - comunidades (Girvan-Newman)</text>
+<line x1="88.5" y1="640.4" x2="50.0" y2="822.6" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="88.5" y1="640.4" x2="243.9" y2="814.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="50.0" y1="822.6" x2="243.9" y2="814.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="243.9" y1="814.2" x2="461.4" y2="880.0" stroke="#C0392B" stroke-width="3" stroke-dasharray="8,4"/>
+<line x1="461.4" y1="880.0" x2="659.1" y2="768.6" stroke="#C0392B" stroke-width="3" stroke-dasharray="8,4"/>
+<line x1="659.1" y1="768.6" x2="720.7" y2="533.7" stroke="#C0392B" stroke-width="3" stroke-dasharray="8,4"/>
+<line x1="720.7" y1="533.7" x2="850.0" y2="378.8" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="720.7" y1="533.7" x2="688.1" y2="283.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="850.0" y1="378.8" x2="688.1" y2="283.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="688.1" y1="283.5" x2="566.4" y2="80.0" stroke="#C0392B" stroke-width="3" stroke-dasharray="8,4"/>
+<circle cx="88.5" cy="640.4" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>A (grau 2)</title></circle>
+<text x="88.5" y="622.4" font-size="12" text-anchor="middle">A</text>
+<circle cx="50.0" cy="822.6" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>B (grau 2)</title></circle>
+<text x="50.0" y="804.6" font-size="12" text-anchor="middle">B</text>
+<circle cx="243.9" cy="814.2" r="14.0" fill="#4E79A7" stroke="#000000" stroke-width="3.5"><title>C (grau 3)</title></circle>
+<text x="243.9" y="796.2" font-size="12" text-anchor="middle">C</text>
+<circle cx="461.4" cy="880.0" r="14.0" fill="#4E79A7" stroke="#000000" stroke-width="3.5"><title>D (grau 2)</title></circle>
+<text x="461.4" y="862.0" font-size="12" text-anchor="middle">D</text>
+<circle cx="659.1" cy="768.6" r="14.0" fill="#F28E2B" stroke="#000000" stroke-width="3.5"><title>E (grau 2)</title></circle>
+<text x="659.1" y="750.6" font-size="12" text-anchor="middle">E</text>
+<circle cx="720.7" cy="533.7" r="14.0" fill="#F28E2B" stroke="#000000" stroke-width="3.5"><title>F (grau 3)</title></circle>
+<text x="720.7" y="515.7" font-size="12" text-anchor="middle">F</text>
+<circle cx="850.0" cy="378.8" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>G (grau 2)</title></circle>
+<text x="850.0" y="360.8" font-size="12" text-anchor="middle">G</text>
+<circle cx="688.1" cy="283.5" r="14.0" fill="#F28E2B" stroke="#000000" stroke-width="3.5"><title>H (grau 3)</title></circle>
+<text x="688.1" y="265.5" font-size="12" text-anchor="middle">H</text>
+<circle cx="566.4" cy="80.0" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>I (grau 1)</title></circle>
+<text x="566.4" y="62.0" font-size="12" text-anchor="middle">I</text>
+<text x="20" y="960" font-size="13" fill="#333">Cores: comunidades | contorno preto: vertice de articulacao | vermelho tracejado: ponte</text>
+</svg>

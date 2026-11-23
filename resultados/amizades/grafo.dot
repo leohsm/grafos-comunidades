@@ -1,0 +1,22 @@
+graph rede {
+  layout=neato; overlap=false; node [style=filled];
+  "A" [fillcolor="#4E79A7"];
+  "B" [fillcolor="#4E79A7"];
+  "C" [fillcolor="#4E79A7", penwidth=3];
+  "D" [fillcolor="#4E79A7", penwidth=3];
+  "E" [fillcolor="#F28E2B", penwidth=3];
+  "F" [fillcolor="#F28E2B", penwidth=3];
+  "G" [fillcolor="#F28E2B"];
+  "H" [fillcolor="#F28E2B", penwidth=3];
+  "I" [fillcolor="#F28E2B"];
+  "A" -- "B";
+  "A" -- "C";
+  "B" -- "C";
+  "C" -- "D" [color=red, style=dashed, penwidth=2];
+  "D" -- "E" [color=red, style=dashed, penwidth=2];
+  "E" -- "F" [color=red, style=dashed, penwidth=2];
+  "F" -- "G";
+  "F" -- "H";
+  "G" -- "H";
+  "H" -- "I" [color=red, style=dashed, penwidth=2];
+}

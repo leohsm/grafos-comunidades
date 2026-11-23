@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="980" viewBox="0 0 900 980" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450" y="30" font-size="20" text-anchor="middle">Rede social - comunidades (Girvan-Newman)</text>
+<line x1="103.5" y1="230.2" x2="147.3" y2="157.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="103.5" y1="230.2" x2="155.6" y2="242.4" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="103.5" y1="230.2" x2="93.0" y2="279.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="103.5" y1="230.2" x2="125.5" y2="190.6" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="147.3" y1="157.3" x2="155.6" y2="242.4" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="147.3" y1="157.3" x2="187.0" y2="186.9" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="155.6" y1="242.4" x2="93.0" y2="279.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="155.6" y1="242.4" x2="186.4" y2="251.7" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="93.0" y1="279.3" x2="125.5" y2="190.6" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="93.0" y1="279.3" x2="157.4" y2="295.0" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="125.5" y1="190.6" x2="187.0" y2="186.9" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="125.5" y1="190.6" x2="223.3" y2="174.8" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="187.0" y1="186.9" x2="186.4" y2="251.7" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="187.0" y1="186.9" x2="237.1" y2="242.1" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="186.4" y1="251.7" x2="157.4" y2="295.0" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="186.4" y1="251.7" x2="223.3" y2="174.8" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="157.4" y1="295.0" x2="237.1" y2="242.1" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="157.4" y1="295.0" x2="103.5" y2="230.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="223.3" y1="174.8" x2="237.1" y2="242.1" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="223.3" y1="174.8" x2="147.3" y2="157.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="237.1" y1="242.1" x2="155.6" y2="242.4" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="361.4" y1="227.3" x2="338.1" y2="169.6" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="361.4" y1="227.3" x2="404.6" y2="206.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="361.4" y1="227.3" x2="397.2" y2="149.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="338.1" y1="169.6" x2="404.6" y2="206.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="338.1" y1="169.6" x2="399.2" y2="80.0" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="404.6" y1="206.3" x2="456.7" y2="123.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="404.6" y1="206.3" x2="397.2" y2="149.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="397.2" y1="149.5" x2="466.9" y2="184.4" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="397.2" y1="149.5" x2="399.2" y2="80.0" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="399.2" y1="80.0" x2="425.6" y2="150.7" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="399.2" y1="80.0" x2="456.7" y2="123.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="456.7" y1="123.3" x2="432.5" y2="196.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="456.7" y1="123.3" x2="466.9" y2="184.4" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="466.9" y1="184.4" x2="447.1" y2="309.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="466.9" y1="184.4" x2="425.6" y2="150.7" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="425.6" y1="150.7" x2="432.5" y2="196.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="425.6" y1="150.7" x2="361.4" y2="227.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="432.5" y1="196.5" x2="447.1" y2="309.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="432.5" y1="196.5" x2="338.1" y2="169.6" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="447.1" y1="309.2" x2="404.6" y2="206.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="447.1" y1="309.2" x2="361.4" y2="227.3" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="237.1" y1="242.1" x2="361.4" y2="227.3" stroke="#7F7F7F" stroke-width="1.5" stroke-opacity="0.9"/>
+<line x1="223.3" y1="174.8" x2="338.1" y2="169.6" stroke="#7F7F7F" stroke-width="1.5" stroke-opacity="0.9"/>
+<line x1="498.7" y1="495.2" x2="526.3" y2="618.7" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="498.7" y1="495.2" x2="519.8" y2="574.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="498.7" y1="495.2" x2="483.2" y2="599.6" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="526.3" y1="618.7" x2="519.8" y2="574.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="526.3" y1="618.7" x2="491.7" y2="679.8" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="519.8" y1="574.5" x2="483.2" y2="599.6" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="519.8" y1="574.5" x2="541.9" y2="659.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="483.2" y1="599.6" x2="491.7" y2="679.8" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="483.2" y1="599.6" x2="557.2" y2="588.0" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="491.7" y1="679.8" x2="541.9" y2="659.5" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="541.9" y1="659.5" x2="557.2" y2="588.0" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="541.9" y1="659.5" x2="594.0" y2="667.8" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="557.2" y1="588.0" x2="594.0" y2="667.8" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="557.2" y1="588.0" x2="498.7" y2="495.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="594.0" y1="667.8" x2="526.3" y2="618.7" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="447.1" y1="309.2" x2="498.7" y2="495.2" stroke="#C0392B" stroke-width="3" stroke-dasharray="8,4"/>
+<line x1="594.0" y1="667.8" x2="646.7" y2="736.9" stroke="#C0392B" stroke-width="3" stroke-dasharray="8,4"/>
+<line x1="646.7" y1="736.9" x2="692.7" y2="800.2" stroke="#C0392B" stroke-width="3" stroke-dasharray="8,4"/>
+<line x1="50.0" y1="850.5" x2="102.0" y2="880.0" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="50.0" y1="850.5" x2="87.7" y2="834.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="50.0" y1="850.5" x2="81.6" y2="779.4" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="102.0" y1="880.0" x2="87.7" y2="834.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="102.0" y1="880.0" x2="127.0" y2="824.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="87.7" y1="834.2" x2="81.6" y2="779.4" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="81.6" y1="779.4" x2="127.0" y2="824.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="87.7" y1="834.2" x2="127.0" y2="824.2" stroke="#9AA0A6" stroke-width="1.5" stroke-opacity="0.7"/>
+<line x1="838.9" y1="186.3" x2="850.0" y2="235.4" stroke="#C0392B" stroke-width="3" stroke-dasharray="8,4"/>
+<circle cx="103.5" cy="230.2" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Ana (grau 5)</title></circle>
+<text x="103.5" y="212.2" font-size="12" text-anchor="middle">Ana</text>
+<circle cx="147.3" cy="157.3" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Bruno (grau 4)</title></circle>
+<text x="147.3" y="139.3" font-size="12" text-anchor="middle">Bruno</text>
+<circle cx="155.6" cy="242.4" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Carla (grau 5)</title></circle>
+<text x="155.6" y="224.4" font-size="12" text-anchor="middle">Carla</text>
+<circle cx="93.0" cy="279.3" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Diego (grau 4)</title></circle>
+<text x="93.0" y="261.3" font-size="12" text-anchor="middle">Diego</text>
+<circle cx="125.5" cy="190.6" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Elisa (grau 4)</title></circle>
+<text x="125.5" y="172.6" font-size="12" text-anchor="middle">Elisa</text>
+<circle cx="187.0" cy="186.9" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Fabio (grau 4)</title></circle>
+<text x="187.0" y="168.9" font-size="12" text-anchor="middle">Fabio</text>
+<circle cx="186.4" cy="251.7" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Gabriela (grau 4)</title></circle>
+<text x="186.4" y="233.7" font-size="12" text-anchor="middle">Gabriela</text>
+<circle cx="157.4" cy="295.0" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Hugo (grau 4)</title></circle>
+<text x="157.4" y="277.0" font-size="12" text-anchor="middle">Hugo</text>
+<circle cx="223.3" cy="174.8" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Isabela (grau 5)</title></circle>
+<text x="223.3" y="156.8" font-size="12" text-anchor="middle">Isabela</text>
+<circle cx="237.1" cy="242.1" r="14.0" fill="#4E79A7" stroke="#FFFFFF" stroke-width="1.5"><title>Joao (grau 5)</title></circle>
+<text x="237.1" y="224.1" font-size="12" text-anchor="middle">Joao</text>
+<circle cx="361.4" cy="227.3" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Karina (grau 6)</title></circle>
+<text x="361.4" y="209.3" font-size="12" text-anchor="middle">Karina</text>
+<circle cx="338.1" cy="169.6" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Lucas (grau 5)</title></circle>
+<text x="338.1" y="151.6" font-size="12" text-anchor="middle">Lucas</text>
+<circle cx="404.6" cy="206.3" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Marina (grau 5)</title></circle>
+<text x="404.6" y="188.3" font-size="12" text-anchor="middle">Marina</text>
+<circle cx="397.2" cy="149.5" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Nicolas (grau 4)</title></circle>
+<text x="397.2" y="131.5" font-size="12" text-anchor="middle">Nicolas</text>
+<circle cx="399.2" cy="80.0" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Olivia (grau 4)</title></circle>
+<text x="399.2" y="62.0" font-size="12" text-anchor="middle">Olivia</text>
+<circle cx="456.7" cy="123.3" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Pedro (grau 4)</title></circle>
+<text x="456.7" y="105.3" font-size="12" text-anchor="middle">Pedro</text>
+<circle cx="466.9" cy="184.4" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Quezia (grau 4)</title></circle>
+<text x="466.9" y="166.4" font-size="12" text-anchor="middle">Quezia</text>
+<circle cx="425.6" cy="150.7" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Rafael (grau 4)</title></circle>
+<text x="425.6" y="132.7" font-size="12" text-anchor="middle">Rafael</text>
+<circle cx="432.5" cy="196.5" r="14.0" fill="#F28E2B" stroke="#FFFFFF" stroke-width="1.5"><title>Sofia (grau 4)</title></circle>
+<text x="432.5" y="178.5" font-size="12" text-anchor="middle">Sofia</text>
+<circle cx="447.1" cy="309.2" r="14.0" fill="#F28E2B" stroke="#000000" stroke-width="3.5"><title>Tiago (grau 5)</title></circle>
+<text x="447.1" y="291.2" font-size="12" text-anchor="middle">Tiago</text>
+<circle cx="498.7" cy="495.2" r="14.0" fill="#59A14F" stroke="#000000" stroke-width="3.5"><title>Vitor (grau 5)</title></circle>
+<text x="498.7" y="477.2" font-size="12" text-anchor="middle">Vitor</text>
+<circle cx="526.3" cy="618.7" r="14.0" fill="#59A14F" stroke="#FFFFFF" stroke-width="1.5"><title>Wagner (grau 4)</title></circle>
+<text x="526.3" y="600.7" font-size="12" text-anchor="middle">Wagner</text>
+<circle cx="519.8" cy="574.5" r="14.0" fill="#59A14F" stroke="#FFFFFF" stroke-width="1.5"><title>Xavier (grau 4)</title></circle>
+<text x="519.8" y="556.5" font-size="12" text-anchor="middle">Xavier</text>
+<circle cx="483.2" cy="599.6" r="14.0" fill="#59A14F" stroke="#FFFFFF" stroke-width="1.5"><title>Yasmin (grau 4)</title></circle>
+<text x="483.2" y="581.6" font-size="12" text-anchor="middle">Yasmin</text>
+<circle cx="491.7" cy="679.8" r="14.0" fill="#59A14F" stroke="#FFFFFF" stroke-width="1.5"><title>Zeca (grau 3)</title></circle>
+<text x="491.7" y="661.8" font-size="12" text-anchor="middle">Zeca</text>
+<circle cx="541.9" cy="659.5" r="14.0" fill="#59A14F" stroke="#FFFFFF" stroke-width="1.5"><title>Alice (grau 4)</title></circle>
+<text x="541.9" y="641.5" font-size="12" text-anchor="middle">Alice</text>
+<circle cx="557.2" cy="588.0" r="14.0" fill="#59A14F" stroke="#FFFFFF" stroke-width="1.5"><title>Bernardo (grau 4)</title></circle>
+<text x="557.2" y="570.0" font-size="12" text-anchor="middle">Bernardo</text>
+<circle cx="594.0" cy="667.8" r="14.0" fill="#59A14F" stroke="#000000" stroke-width="3.5"><title>Caio (grau 4)</title></circle>
+<text x="594.0" y="649.8" font-size="12" text-anchor="middle">Caio</text>
+<circle cx="646.7" cy="736.9" r="14.0" fill="#59A14F" stroke="#000000" stroke-width="3.5"><title>Davi (grau 2)</title></circle>
+<text x="646.7" y="718.9" font-size="12" text-anchor="middle">Davi</text>
+<circle cx="692.7" cy="800.2" r="14.0" fill="#59A14F" stroke="#FFFFFF" stroke-width="1.5"><title>Eduardo (grau 1)</title></circle>
+<text x="692.7" y="782.2" font-size="12" text-anchor="middle">Eduardo</text>
+<circle cx="50.0" cy="850.5" r="14.0" fill="#B07AA1" stroke="#FFFFFF" stroke-width="1.5"><title>Helena (grau 3)</title></circle>
+<text x="50.0" y="832.5" font-size="12" text-anchor="middle">Helena</text>
+<circle cx="102.0" cy="880.0" r="14.0" fill="#B07AA1" stroke="#FFFFFF" stroke-width="1.5"><title>Igor (grau 3)</title></circle>
+<text x="102.0" y="862.0" font-size="12" text-anchor="middle">Igor</text>
+<circle cx="87.7" cy="834.2" r="14.0" fill="#B07AA1" stroke="#FFFFFF" stroke-width="1.5"><title>Julia (grau 4)</title></circle>
+<text x="87.7" y="816.2" font-size="12" text-anchor="middle">Julia</text>
+<circle cx="81.6" cy="779.4" r="14.0" fill="#B07AA1" stroke="#FFFFFF" stroke-width="1.5"><title>Leandro (grau 3)</title></circle>
+<text x="81.6" y="761.4" font-size="12" text-anchor="middle">Leandro</text>
+<circle cx="127.0" cy="824.2" r="14.0" fill="#B07AA1" stroke="#FFFFFF" stroke-width="1.5"><title>Mirela (grau 3)</title></circle>
+<text x="127.0" y="806.2" font-size="12" text-anchor="middle">Mirela</text>
+<circle cx="838.9" cy="186.3" r="14.0" fill="#76B7B2" stroke="#FFFFFF" stroke-width="1.5"><title>Nina (grau 1)</title></circle>
+<text x="838.9" y="168.3" font-size="12" text-anchor="middle">Nina</text>
+<circle cx="850.0" cy="235.4" r="14.0" fill="#76B7B2" stroke="#FFFFFF" stroke-width="1.5"><title>Otavio (grau 1)</title></circle>
+<text x="850.0" y="217.4" font-size="12" text-anchor="middle">Otavio</text>
+<text x="20" y="960" font-size="13" fill="#333">Cores: comunidades | contorno preto: vertice de articulacao | vermelho tracejado: ponte</text>
+</svg>
