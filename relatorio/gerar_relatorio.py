@@ -190,6 +190,14 @@ def capa(texto, tam=12, negrito=True, antes=0, depois=6, cor=None, sublinhado=Fa
     if cor: run.font.color.rgb = cor
     if sublinhado: run.underline = True
     if destaque: run.font.highlight_color = WD_COLOR_INDEX.YELLOW
+    if texto.startswith("http"):   # transforma o texto em hiperlink clicável
+        rid = par.part.relate_to(texto, "http://schemas.openxmlformats.org/officeDocument/2006/"
+                                 "relationships/hyperlink", is_external=True)
+        link = OxmlElement("w:hyperlink")
+        link.set(qn("r:id"), rid)
+        par._p.remove(run._r)
+        link.append(run._r)
+        par._p.append(link)
 
 
 capa("UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ – UTFPR", antes=0, depois=12)
@@ -198,8 +206,8 @@ capa("Erik Mazzuco", antes=120, depois=0)
 capa("Letícia Moro", depois=0)
 capa("Leonardo Herrero", depois=0)
 capa("CONECTIVIDADE E DETECÇÃO DE COMUNIDADES EM GRAFOS", antes=110, depois=12)
-capa("[inserir link do repositório GitHub]", cor=RGBColor(0x05, 0x63, 0xC1), sublinhado=True,
-     destaque=True, depois=12)
+capa("https://github.com/leohsm/grafos-comunidades", cor=RGBColor(0x05, 0x63, 0xC1), sublinhado=True,
+     depois=12)
 capa("Detecção de Comunidades em Redes Sociais Utilizando Conectividade de Grafos", tam=11)
 capa("Medianeira", negrito=False, antes=140, depois=6)
 capa("2026", negrito=False)
